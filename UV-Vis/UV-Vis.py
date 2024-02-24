@@ -1,10 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit 
-#import os #To cd into the right directory
-#print(os.getcwd())
 
-file = 'phone.txt'
+file = 'FILEHERE.txt'
 
 # Gaussian assumes there is 0 offset.
 # w = std dev, width
@@ -37,7 +35,7 @@ def gaussian3(x,w1,A1,x01, w2, A2, x02, w3, A3, x03):
 signal=open(file,'r')
 
 #start reading the file to find out how many lines to skip
-#data is required to have the below else code will hang.
+#data is required to have the below line else code will hang.
 startdata='>>>>>Begin Processed Spectral Data<<<<<'
 line = 1
 readline = True
@@ -78,9 +76,9 @@ plt.ylabel("Intensity")
 plt.legend()
 
 #Plot individual Gaussians
-#plt.plot(xdata, gauss_red, color='red')
-#plt.plot(xdata, gauss_green, color='green')
-#plt.plot(xdata, gauss_blue, color ='blue')
+plt.plot(xdata, gauss_red, color='red')
+plt.plot(xdata, gauss_green, color='green')
+plt.plot(xdata, gauss_blue, color ='blue')
 
 #Intensities of the individual gaussians
 I_r = gaussian1(popt[2], *pars_1)
