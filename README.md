@@ -44,7 +44,7 @@ With more broader spectra, the code can fail to distinguish between the peaks. S
 
 The Sersic function describes the light profile of a galaxy. The code was written to plot the files and fit them to the Sersic function to extract the Sersic index n (degree of curvature of the function). The allows the formation process of a galaxy to be inferred, where a higher Sersic index indicates a more centrally-concentrated light profile and a more violent history, such as formation through galaxy mergers. A smaller Sersic index has a more "smoother" profile, indicating a slower and less violent process, such as through gas accretion.
 
-Galaxies studied in the project were: 
+Galaxies studied in the project were: M81; M94; M101; NGC 2550A; NGC 7331; NGC1573; NGC3379; and NGC 1275.
 
 ### Code
 As a lot of trial and error was done during the project, there were MANY variations of the code for plotting data (e.g. graph format or to test the effect of different parameters) as well as for error analysis. Three Jupyter Notebooks have been uploaded:
@@ -56,14 +56,20 @@ As a lot of trial and error was done during the project, there were MANY variati
 ### Examples
 Example data is stored in 'katiestack'.
 
-![multiple_galaxies](https://github.com/user-attachments/assets/99e9f105-8bdc-42d2-91cd-7abca64a7c04)
+<img src="https://github.com/user-attachments/assets/99e9f105-8bdc-42d2-91cd-7abca64a7c04" width="400">
+
 Surface brightness profiles of elliptical galaxies and the bulges of spiral galaxies, with their residuals. The error bars represent 3σ. The shaded region represents 1σ. There are anomalous data points towards the centre, where their residuals are greater than the scale shown.
 
-![NGC2550A](https://github.com/user-attachments/assets/de7fbb1f-f0f5-4cf4-886f-9af592669b96)
+
+<img src="https://github.com/user-attachments/assets/de7fbb1f-f0f5-4cf4-886f-9af592669b96" width="400">
+
 Comparison of with a logarithmic scale and without for the radius. Orange is the fit for the bulge and green the disc.
 
-![Lag_Plot](https://github.com/user-attachments/assets/807a9fc8-4e36-4788-bdb8-7edde2410a4a)
+
+<img src="https://github.com/user-attachments/assets/807a9fc8-4e36-4788-bdb8-7edde2410a4a" width="400">
+
 Lag plots for selected galaxies: (a) NGC 2550A bulge; (b) M101 disc; (c) NGC3379; and (d) NGC 1275. The shaded region represents 2σ. *i* and *i - 1* refer to a data point and its previous point. A positive correlation can be seen in (d), indicating the fit was not the best.
+
 
 ### Comments and Further Work
 Spiral galaxies have two main components: the bulge and the disc. The code took these two components individually, leading to results that were not perfectly accurate - altering the code such that the function is a sum of the two components (rather than taking each part individually) may improve accuracy.
