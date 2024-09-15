@@ -63,7 +63,7 @@ Surface brightness profiles of elliptical galaxies and the bulges of spiral gala
 
 <img src="https://github.com/user-attachments/assets/de7fbb1f-f0f5-4cf4-886f-9af592669b96" width="400">
 
-Comparison of with a logarithmic scale and without for the radius. Orange is the fit for the bulge and green the disc.
+Comparison of with a logarithmic scale and without for light profile of NGC 2550A. Orange is the fit for the bulge and green the disc.
 
 
 <img src="https://github.com/user-attachments/assets/807a9fc8-4e36-4788-bdb8-7edde2410a4a" width="400">
